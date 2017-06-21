@@ -65,6 +65,7 @@ namespace TrayApp
         {
             //Tarefa que é executada assim que criada ou alterada.
             RegistrationTrigger rt = new RegistrationTrigger();
+            rt.Delay = TimeSpan.FromMinutes(60);
             rt.Repetition.Interval = TimeSpan.FromMinutes(intervaloRepeticaoEmMinutos);
             return rt;
         }
